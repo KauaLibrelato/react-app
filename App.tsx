@@ -10,7 +10,7 @@ import {
 } from "@expo-google-fonts/inter";
 import AppLoading from "expo-app-loading";
 import { theme } from "./src/styles/theme";
-import Routes from "./src/routes/indes";
+import Routes from "./src/routes";
 import { AuthProvider } from "./src/hooks/AuthProvider";
 
 export default function App() {
