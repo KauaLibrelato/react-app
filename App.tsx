@@ -10,8 +10,8 @@ import {
 } from "@expo-google-fonts/inter";
 import AppLoading from "expo-app-loading";
 import { theme } from "./src/styles/theme";
-import Routes from "./src/routes";
-import { AuthProvider } from "./src/hooks/AuthProvider";
+import { Routes } from "./src/routes";
+// import { AuthProvider } from "./src/hooks/AuthProvider";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -26,9 +26,9 @@ export default function App() {
   }
   return (
     <ThemeProvider theme={theme}>
-      <AuthProvider>
-        <Routes />
-      </AuthProvider>
+      {/* <AuthProvider> */}
+      <Routes />
+      {/* </AuthProvider> */}
     </ThemeProvider>
   );
 }

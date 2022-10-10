@@ -26,7 +26,7 @@ export function GlobalButton({
       {...rest}
       onPress={onPress}
       activeOpacity={0.8}
-      color={color || theme.colors.primary}
+      color={color || theme.colors.primary_2}
       disabled={disabled}
       style={{ opacity: disabled === false || loading === true ? 1 : 0.5 }}
     >

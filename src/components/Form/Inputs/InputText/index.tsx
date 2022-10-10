@@ -1,7 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { TextInputProps } from "react-native";
-import { Container, InputTextContainer, Error, ErrorText } from "./styles";
+import {
+  Container,
+  InputTextContainer,
+  Error,
+  ErrorText,
+  InputLabel,
+} from "./styles";
 
 interface Props extends TextInputProps {
   value?: string;
@@ -9,6 +15,8 @@ interface Props extends TextInputProps {
   errorText?: any;
   disabled?: any;
   name?: string;
+  label?: string;
+  labelColor?: any;
 }
 
 export function InputText({
@@ -16,19 +24,26 @@ export function InputText({
   name,
   errorText,
   disabled,
+  label,
+  labelColor,
   ...rest
 }: Props) {
   return (
-    <Container disabled={disabled}>
-      <InputTextContainer
-        name={name}
-        disabled={disabled}
-        value={value}
-        {...rest}
-      />
-      <Error>
-        <ErrorText>{errorText}</ErrorText>
-      </Error>
-    </Container>
+    <>
+      <InputLabel labelColor={labelColor}>{label}</InputLabel>
+      <Container disabled={disabled}>
+        <InputTextContainer
+          name={name}
+          disabled={disabled}
+          value={value}
+          {...rest}
+        />
+        {errorText && (
+          <Error>
+            <ErrorText>{errorText}</ErrorText>
+          </Error>
+        )}
+      </Container>
+    </>
   );
 }

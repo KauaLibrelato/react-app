@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { TextInputProps } from "react-native";
 
+import { Eye, EyeSlash } from "phosphor-react-native";
 import {
   Container,
   InputTextContainer,
@@ -11,8 +12,6 @@ import {
   IconContainer,
   InputContainer,
 } from "./styles";
-import EyeOffSvg from "../../../../assets/eye-off.svg";
-import EyeSvg from "../../../../assets/eye.svg";
 
 interface Props extends TextInputProps {
   value?: string;
@@ -52,9 +51,9 @@ export function PasswordInput({
         >
           <IconContainer>
             {!isPasswordVisible ? (
-              <EyeSvg width={24} height={24} />
+              <Eye size={24} color="#4D4D4D" />
             ) : (
-              <EyeOffSvg width={24} height={24} />
+              <EyeSlash size={24} color="#4D4D4D" />
             )}
           </IconContainer>
         </ChangeVisibiliyPassword>

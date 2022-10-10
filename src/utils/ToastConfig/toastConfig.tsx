@@ -1,30 +1,33 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { BaseToast } from "react-native-toast-message";
-import { useTheme } from "styled-components";
-import { closeToast } from "../../components/Toaster";
-
-const theme = useTheme();
+import { X } from "phosphor-react-native";
 
 export const toastConfig = {
   success: ({ text1, ...rest }: any) => (
     <BaseToast
       {...rest}
       style={{
-        width: "",
-        height: 0,
-        borderRadius: 0,
-        borderLeftColor: "",
-        backgroundColor: "",
+        width: "100%",
+        height: 56,
+        borderLeftColor: "#D8F3D9",
+        backgroundColor: "#D8F3D9",
       }}
-      onTrailingIconPress={() => closeToast()}
-      contentContainerStyle={{ paddingHorizontal: 16 }}
+      renderTrailingIcon={() => (
+        <X weight="regular" size={24} color="#247528" />
+      )}
+      contentContainerStyle={{
+        paddingHorizontal: 16,
+        paddingVertical: 16,
+        justifyContent: "center",
+      }}
       text1={text1}
       text1Style={{
-        color: "",
-        fontSize: 0,
-        fontWeight: "",
-        fontFamily: "",
-        paddingBottom: 0,
+        marginTop: 6,
+        color: "#247528",
+        fontSize: 14,
+        fontWeight: "400",
+        fontFamily: "Inter_400Regular",
       }}
     />
   ),
@@ -32,21 +35,53 @@ export const toastConfig = {
     <BaseToast
       {...rest}
       style={{
-        color: "",
-        fontSize: 0,
-        fontWeight: "",
-        fontFamily: "",
-        paddingBottom: 0,
+        width: "100%",
+        height: 56,
+        borderLeftColor: "#FFCCCC",
+        backgroundColor: "#FFCCCC",
       }}
-      onTrailingIconPress={() => closeToast()}
-      contentContainerStyle={{ paddingHorizontal: 16 }}
+      contentContainerStyle={{
+        paddingHorizontal: 16,
+        paddingVertical: 16,
+        justifyContent: "center",
+      }}
+      renderTrailingIcon={() => (
+        <X weight="regular" size={24} color="#CC0000" />
+      )}
       text1={text1}
       text1Style={{
-        color: "",
-        fontSize: 0,
-        fontWeight: "",
-        fontFamily: "",
-        paddingBottom: 0,
+        marginTop: 6,
+        color: "#CC0000",
+        fontSize: 14,
+        fontWeight: "400",
+        fontFamily: "Inter_400Regular",
+      }}
+    />
+  ),
+  warning: ({ text1, ...rest }: any) => (
+    <BaseToast
+      {...rest}
+      style={{
+        width: "100%",
+        height: 56,
+        borderLeftColor: "#CDE4FE",
+        backgroundColor: "#CDE4FE",
+      }}
+      contentContainerStyle={{
+        paddingHorizontal: 16,
+        paddingVertical: 16,
+        justifyContent: "center",
+      }}
+      renderTrailingIcon={() => (
+        <X weight="regular" size={24} color="#044795" />
+      )}
+      text1={text1}
+      text1Style={{
+        marginTop: 6,
+        color: "#044795",
+        fontSize: 14,
+        fontWeight: "400",
+        fontFamily: "Inter_400Regular",
       }}
     />
   ),

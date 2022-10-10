@@ -1,4 +1,5 @@
 import { TouchableOpacity } from "react-native";
+import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -27,8 +28,8 @@ export const InputTextContainer = styled.TextInput<{
 }>`
   padding: 16px;
   width: 85%;
-  color: ${({ disabled }) => (disabled ? "#999999" : "#4D4D4D")};
-  font-size: 16px;
+  color: ${({ disabled }) => (disabled ? "#999999" : "#191919")};
+  font-size: ${RFValue(16)}px;
   font-family: ${({ theme }) => theme.fonts.primary_500};
 `;
 
@@ -38,7 +39,7 @@ export const Error = styled.View`
 
 export const ErrorText = styled.Text`
   color: ${({ theme }) => theme.colors.danger_2};
-  font-size: 12px;
+  font-size: ${RFValue(12)}px;
   font-family: ${({ theme }) => theme.fonts.primary_400};
   margin-bottom: 8px;
 `;

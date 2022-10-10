@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "appJugasa",
-    "slug": "appJugasa",
+    "name": "reactapp",
+    "slug": "reactapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
