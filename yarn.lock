@@ -1028,6 +1028,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.1.5":
+  version "7.20.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.6.tgz#facf4879bfed9b5326326273a64220f099b0fce3"
+  integrity sha512-Q+8MqP7TiHMWzSfwiJwXCjyf4GYA4Dgw3emg/7xmwsdLJOZUp+nMqcOwOzzYheuM1rhDu8FSj2l0aoMygEuXuA==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/template@^7.0.0", "@babel/template@^7.18.10":
   version "7.18.10"
   resolved "https://registry.npmjs.org/@babel/template/-/template-7.18.10.tgz"
@@ -1061,6 +1068,11 @@
     "@babel/helper-string-parser" "^7.18.10"
     "@babel/helper-validator-identifier" "^7.18.6"
     to-fast-properties "^2.0.0"
+
+"@config-plugins/react-native-ble-plx@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@config-plugins/react-native-ble-plx/-/react-native-ble-plx-5.0.0.tgz#60a45e3e9849ab6249bcce0d171296b35ada1f02"
+  integrity sha512-yPpdGdxLoSH18dWDuv6TpoV1CAj1pj5naZCPsxaibzTuOuR56oUWwhhCom2jJq8IT3s3XIOOJPU6uBlrnkRY2A==
 
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"
@@ -1195,6 +1207,26 @@
     node-forge "^1.2.1"
     nullthrows "^1.1.1"
 
+"@expo/config-plugins@^3.0.8":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-3.1.0.tgz#0752ff33c5eab21cf42034a44e79df97f0f867f8"
+  integrity sha512-V5qxaxCAExBM0TXmbU1QKiZcAGP3ecu7KXede8vByT15cro5PkcWu2sSdJCYbHQ/gw6Vf/i8sr8gKlN8V8TSLg==
+  dependencies:
+    "@expo/config-types" "^42.0.0"
+    "@expo/json-file" "8.2.33"
+    "@expo/plist" "0.0.14"
+    chalk "^4.1.2"
+    debug "^4.3.1"
+    find-up "~5.0.0"
+    fs-extra "9.0.0"
+    getenv "^1.0.0"
+    glob "7.1.6"
+    resolve-from "^5.0.0"
+    semver "^7.3.5"
+    slash "^3.0.0"
+    xcode "^3.0.1"
+    xml2js "^0.4.23"
+
 "@expo/config-plugins@~5.0.0", "@expo/config-plugins@~5.0.1":
   version "5.0.1"
   resolved "https://registry.npmjs.org/@expo/config-plugins/-/config-plugins-5.0.1.tgz"
@@ -1215,6 +1247,11 @@
     slash "^3.0.0"
     xcode "^3.0.1"
     xml2js "0.4.23"
+
+"@expo/config-types@^42.0.0":
+  version "42.0.0"
+  resolved "https://registry.yarnpkg.com/@expo/config-types/-/config-types-42.0.0.tgz#3e3e125ec092c0c34dbfaf19be5480402de3d677"
+  integrity sha512-Rj02OMZke2MrGa/1Y/EScmR7VuWbDEHPJyvfFyyLbadUt+Yv6isCdeFzDt71I7gJlPR9T4fzixeYLrtXXOTq0w==
 
 "@expo/config-types@^46.0.0", "@expo/config-types@^46.0.1":
   version "46.0.2"
@@ -1307,6 +1344,15 @@
     semver "7.3.2"
     tempy "0.3.0"
 
+"@expo/json-file@8.2.33":
+  version "8.2.33"
+  resolved "https://registry.yarnpkg.com/@expo/json-file/-/json-file-8.2.33.tgz#78f56f33a2cfb807b23c81e00237a33159aa1f32"
+  integrity sha512-CDnhjdirUs6OdN5hOSTJ2y3i9EiJMk7Z5iDljC5xyCHCrUex7oyI8vbRsZEojAahxZccgL/PrO+CjakiFFWurg==
+  dependencies:
+    "@babel/code-frame" "~7.10.4"
+    json5 "^1.0.1"
+    write-file-atomic "^2.3.0"
+
 "@expo/json-file@8.2.36", "@expo/json-file@^8.2.35":
   version "8.2.36"
   resolved "https://registry.npmjs.org/@expo/json-file/-/json-file-8.2.36.tgz"
@@ -1353,6 +1399,15 @@
     rimraf "^3.0.2"
     split "^1.0.1"
     sudo-prompt "9.1.1"
+
+"@expo/plist@0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@expo/plist/-/plist-0.0.14.tgz#a756903bd28aabe0a961222df2e7858a39a218c9"
+  integrity sha512-bb4Ua1M/OdNgS8KiGdSDUjZ/bbPfv3xdPY/lz8Ctp/adlj/QgB8xA7tVPeqSSfJPZqFRwU0qLCnRhpUOnP51VQ==
+  dependencies:
+    "@xmldom/xmldom" "~0.7.0"
+    base64-js "^1.2.3"
+    xmlbuilder "^14.0.0"
 
 "@expo/plist@0.0.18", "@expo/plist@^0.0.18":
   version "0.0.18"
@@ -2771,7 +2826,7 @@ buffer-from@^1.0.0:
   resolved "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz"
   integrity sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
 
-buffer@^5.5.0:
+buffer@^5.2.1, buffer@^5.4.3, buffer@^5.5.0:
   version "5.7.1"
   resolved "https://registry.npmjs.org/buffer/-/buffer-5.7.1.tgz"
   integrity sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==
@@ -4001,6 +4056,42 @@ expo-constants@~13.2.2, expo-constants@~13.2.4:
     "@expo/config" "~7.0.0"
     uuid "^3.3.2"
 
+expo-dev-client@~1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/expo-dev-client/-/expo-dev-client-1.3.1.tgz#bcaf46bd4646354d8c6fd3b2270d5802d221ac8b"
+  integrity sha512-GGMaLwc3FNdcGB2UsEj252CV9DmWJWMblqX0h5AtiEnmKyVBRn3/yiQyWdPFDkLletYGvDeILfMHUo/PRdOGIA==
+  dependencies:
+    "@expo/config-plugins" "~5.0.0"
+    expo-dev-launcher "1.3.1"
+    expo-dev-menu "1.3.1"
+    expo-dev-menu-interface "0.7.2"
+    expo-manifests "~0.3.0"
+    expo-updates-interface "~0.7.0"
+
+expo-dev-launcher@1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/expo-dev-launcher/-/expo-dev-launcher-1.3.1.tgz#6e1f117f10443ac26f63a080f0c0c1cd649c9a14"
+  integrity sha512-yZLJZBEnU10suJg1j3HcX2be7ri1qfDek4axbwb4JG5g5T4+wHHvqfTVNlpitg/wfylI8zj2EzZ0jH6A6NtkNQ==
+  dependencies:
+    "@expo/config-plugins" "~5.0.0"
+    expo-dev-menu "1.3.1"
+    resolve-from "^5.0.0"
+    semver "^7.3.5"
+
+expo-dev-menu-interface@0.7.2:
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/expo-dev-menu-interface/-/expo-dev-menu-interface-0.7.2.tgz#2198d014bcbe11335225cc3f100226195b441bc4"
+  integrity sha512-Ym0IFsgBj9bdInjRcxv6xfczdTCKfPKUAsLZ1sD5twpOs7oBViMnTC0+KTGkkYHG4EapWbu9yApPmbV3N10Zcg==
+
+expo-dev-menu@1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/expo-dev-menu/-/expo-dev-menu-1.3.1.tgz#9df51bdc8a29b7f662399a7d678950fc4cbbad46"
+  integrity sha512-D3g4JgmxBl1AFmd4MvZfTjzCBDRBqe/wepcsjOlIPunZ9ad87+ACABgQMi1rQ7S2MzlNk+q9OtntVGXfwfoxMQ==
+  dependencies:
+    "@expo/config-plugins" "~5.0.0"
+    expo-dev-menu-interface "0.7.2"
+    semver "^7.3.5"
+
 expo-error-recovery@~3.2.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/expo-error-recovery/-/expo-error-recovery-3.2.0.tgz"
@@ -4035,10 +4126,22 @@ expo-image-picker@~13.3.1:
     expo-image-loader "~3.2.0"
     uuid "7.0.2"
 
+expo-json-utils@~0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/expo-json-utils/-/expo-json-utils-0.3.0.tgz#0c4a0195ee2bbde02cbb5f4d384d1cb63bea7493"
+  integrity sha512-ceo0pWFJqRAsNjZWX3rVDhy+NDzmrBNFOdvW+HE4EHqlt+OEUu9INIYKO8fU+g3ifI0VcKqHfvvj5wKsSpvPBw==
+
 expo-keep-awake@~10.2.0:
   version "10.2.0"
   resolved "https://registry.npmjs.org/expo-keep-awake/-/expo-keep-awake-10.2.0.tgz"
   integrity sha512-kIRtO4Hmrvxh4E45IPWG/NiUZsuRe1AQwBT09pq+kx8nm6tUS4B9TeL6+1NFy+qVBLbGKDqoQD5Ez7XYTFtBeQ==
+
+expo-manifests@~0.3.0:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/expo-manifests/-/expo-manifests-0.3.1.tgz#52c3ef41d3b1958039be0434363e6499c773aaf6"
+  integrity sha512-zv2a4pzhbvxVjrTO4XEiP5THt4RwtxyJjfixFhDNfHtDQR7fS4h9sZSGX9ind+IS5SQJQ2ykfVAi8xnwP6zHaw==
+  dependencies:
+    expo-json-utils "~0.3.0"
 
 expo-modules-autolinking@0.10.3:
   version "0.10.3"
@@ -4059,7 +4162,7 @@ expo-modules-core@0.11.5:
     compare-versions "^3.4.0"
     invariant "^2.2.4"
 
-expo-splash-screen@~0.16.0:
+expo-splash-screen@~0.16.0, expo-splash-screen@~0.16.2:
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/expo-splash-screen/-/expo-splash-screen-0.16.2.tgz#38ecba9fc9fc2234ee38bcb818d8c88cd83cff9e"
   integrity sha512-AHSRyGwu58WNt8shW5g/4cQ9e9IzUwNTC/WGWxshHCwgbWIJmHLvK3+D45MTmzGWteOoTI8oV7KSQKBNJSTiyw==
@@ -4071,6 +4174,11 @@ expo-status-bar@~1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/expo-status-bar/-/expo-status-bar-1.4.0.tgz"
   integrity sha512-vh98g8qMIjig/2XTBsoAWS6Vo2dIIwDWjB3/GiuZ9Lazpxc9GO/APfJ4dar7MibzIDUKIrjotrcL6rLdPH13Ew==
+
+expo-updates-interface@~0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/expo-updates-interface/-/expo-updates-interface-0.7.0.tgz#f4f03b61dbdd949cac9fb44e250e1162ba177650"
+  integrity sha512-saThnbrYDSjKxfMFFguAvh5o5KGabvAOHItkJRwq2L3c0T/3q26Q0kM83880h/+TTtAVsl1+Vhny9d+ImD3yvQ==
 
 expo@~46.0.9:
   version "46.0.10"
@@ -6913,6 +7021,26 @@ react-is@^17.0.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-native-ble-plx@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-ble-plx/-/react-native-ble-plx-2.0.3.tgz#b0a746f33389dbf7fd7b158513330d487d5d0fbb"
+  integrity sha512-62LRDBPf/03K7sge+qq2ZuF8PWCGB782G+SBrpgNm5fA5Hs3FCY1ExTJZ1G0tB5ZhBPYEXcKRxPLuFegcDFrqA==
+
+react-native-bluetooth-classic@^1.60.0-rc.24:
+  version "1.60.0-rc.24"
+  resolved "https://registry.yarnpkg.com/react-native-bluetooth-classic/-/react-native-bluetooth-classic-1.60.0-rc.24.tgz#ef33372da6a2eec15a6659558298278bc51cdb0e"
+  integrity sha512-xdHiyYnc72Z58pdBdMw1ZHhrsOUkdeyUDN9TrHEoypeD40FAxfFTkBZmwmmvp/LJyEJtHXUi5KvA8MinGUiUZA==
+  dependencies:
+    buffer "^5.4.3"
+
+react-native-bluetooth-serial-next@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-native-bluetooth-serial-next/-/react-native-bluetooth-serial-next-1.2.3.tgz#943c8d789a553b076da313472f6dc48f408c2828"
+  integrity sha512-P5HtiiIvCkokR+kYWRioRn/wq/NgJjRtf15Sp/nRlD3xgjxQdhalXAlE6U/WlTZ1QWD5/FZO4/ur6ChRFO3n9Q==
+  dependencies:
+    "@babel/runtime" "^7.1.5"
+    buffer "^5.2.1"
+
 react-native-codegen@^0.69.2:
   version "0.69.2"
   resolved "https://registry.npmjs.org/react-native-codegen/-/react-native-codegen-0.69.2.tgz"
@@ -7111,6 +7239,11 @@ regenerate@^1.4.2:
   version "1.4.2"
   resolved "https://registry.npmjs.org/regenerate/-/regenerate-1.4.2.tgz"
   integrity sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==
+
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 regenerator-runtime@^0.13.2, regenerator-runtime@^0.13.4:
   version "0.13.9"
@@ -8516,6 +8649,13 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
+with-rn-bluetooth-classic@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/with-rn-bluetooth-classic/-/with-rn-bluetooth-classic-1.0.5.tgz#953842c84f37dfb8fcc4ebb4bcc70c0de17542f5"
+  integrity sha512-+sNT3Da2WoNvIZUj371R9wL5vd6u3tF8Oajy1DoO+nt3vPYWSmhqAE9uS39hlfONuFDq9LNoi/1Mc7hu73F+zA==
+  dependencies:
+    "@expo/config-plugins" "^3.0.8"
+
 wonka@^4.0.14:
   version "4.0.15"
   resolved "https://registry.npmjs.org/wonka/-/wonka-4.0.15.tgz"
@@ -8590,7 +8730,7 @@ xml-js@^1.6.11:
   dependencies:
     sax "^1.2.4"
 
-xml2js@0.4.23:
+xml2js@0.4.23, xml2js@^0.4.23:
   version "0.4.23"
   resolved "https://registry.npmjs.org/xml2js/-/xml2js-0.4.23.tgz"
   integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==

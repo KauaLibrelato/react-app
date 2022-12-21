@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "reactapp",
-    "slug": "reactapp",
+    "name": "bluetoothtest",
+    "slug": "bluetoothtest",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,10 +24,38 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_ADVERTISE"
+      ],
+      "package": "com.adalovelace.dev.bluetoothtest"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "with-rn-bluetooth-classic",
+        {
+          "peripheralUsageDescription": "Allow myDevice to check bluetooth peripheral info",
+          "alwaysUsageDescription": "Allow myDevice to always use bluetooth info",
+          "protocols": [
+            "com.reactapp.p1",
+            "com.reactapp.p2"
+          ]
+        }
+      ],
+      "@config-plugins/react-native-ble-plx"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "561a305e-7fb3-4315-bf8e-e5c6887ca339"
+      }
     }
   }
 }
